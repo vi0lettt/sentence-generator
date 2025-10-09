@@ -1,0 +1,39 @@
+АРТ_ЕД -> the | a | one | this | that | my | your | his | her | its | our | their | each | every | some
+АРТ_МН -> the | some | these | those | many | few | several | all | both | two | three | four | five | six | seven
+
+СУЩ_ЧЕЛ_ЕД -> man | woman | child | boy | girl | student | teacher | doctor | worker | king | queen | friend | neighbor | soldier | driver
+СУЩ_ЧЕЛ_МН -> people | children | students | teachers | doctors | workers | kings | queens | friends | neighbors | soldiers | drivers | boys | girls | women
+
+СОБСТВ_ЧЕЛ_ЕД -> John | Mary | Alice | Robert | Emma | David | Olivia | James | Sophia | Michael
+
+ПРИЛ_ЧЕЛ -> tall | short | young | old | clever | kind | angry | happy | sad | brave | lazy | strong | weak | rich | poor
+
+ГЛ_ЧЕЛ_ЕД -> walks | runs | eats | sleeps | talks | reads | writes | works | plays | thinks | drives | helps | calls | looks | smiles
+ГЛ_ЧЕЛ_МН -> walk | run | eat | sleep | talk | read | write | work | play | think | drive | help | call | look | smile
+
+СУЩ_ЖИВОТН_ЕД -> dog | cat | horse | cow | tiger | lion | bear | wolf | fox | bird | fish | mouse | rabbit | elephant | monkey
+СУЩ_ЖИВОТН_МН -> dogs | cats | horses | cows | tigers | lions | bears | wolves | foxes | birds | fishes | mice | rabbits | elephants | monkeys
+
+ПРИЛ_ЖИВОТН -> wild | domestic | big | small | fast | slow | hungry | angry | kind | noisy | quiet | funny | lazy | brave | smart
+
+ГЛ_ЖИВОТН_ЕД -> runs | eats | sleeps | jumps | flies | swims | hunts | hides | plays | drinks | bites | climbs | looks | walks | attacks
+ГЛ_ЖИВОТН_МН -> run | eat | sleep | jump | fly | swim | hunt | hide | play | drink | bite | climb | look | walk | attack
+
+СУЩ_ПРЕДМ_ЕД -> table | chair | book | car | house | pen | phone | computer | window | door | bed | bag | lamp | clock | picture
+СУЩ_ПРЕДМ_МН -> tables | chairs | books | cars | houses | pens | phones | computers | windows | doors | beds | bags | lamps | clocks | pictures
+
+ПРИЛ_ПРЕДМ -> big | small | heavy | light | new | old | round | square | red | blue | green | yellow | black | white | broken
+
+ГЛ_ПРЕДМ_ЕД -> lies | stands | falls | breaks | shines | moves | hangs | burns | opens | closes | rings | rolls | works | helps | stays
+ГЛ_ПРЕДМ_МН -> lie | stand | fall | break | shine | move | hang | burn | open | close | ring | roll | work | help | stay
+
+МЕСТОИМ_ЧЕЛ_ЕД -> I | he | she | it | somebody | someone | anybody | nobody | this one | that one | myself | himself | herself | itself
+МЕСТОИМ_ЧЕЛ_МН -> we | you | they | some | all | both | others | everybody | none | these | those | ourselves | yourselves | themselves | anyone
+
+МЕСТОИМ_ЖИВОТН_ЕД -> it | this | that | one | someone | something | anything | nothing | everything | itself | some animal | this creature | that creature | this one | that one
+МЕСТОИМ_ЖИВОТН_МН -> they | these | those | some | many | few | several | all | others | everything | themselves | some animals | these creatures | those creatures | these ones | those ones
+
+МЕСТОИМ_ПРЕДМ_ЕД -> it | this | that | one | something | anything | nothing | everything | itself | this thing | that thing | each | either | neither | whichever
+МЕСТОИМ_ПРЕДМ_МН -> they | these | those | some | many | few | several | all | others | everything | themselves | these things | those things | both | many others | all of them
+
+ПРЕДЛОГ -> in | on | at | under | over | by | near | behind | before | after | with | without | about | for | from
