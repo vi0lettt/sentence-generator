@@ -1,39 +1,96 @@
-АРТ_ЕД -> the | a | one | this | that | my | your | his | her | its | our | their | each | every | some
-АРТ_МН -> the | some | these | those | many | few | several | all | both | two | three | four | five | six | seven
+# -- Глаголы людей: разделение на типы
 
-СУЩ_ЧЕЛ_ЕД -> man | woman | child | boy | girl | student | teacher | doctor | worker | king | queen | friend | neighbor | soldier | driver
-СУЩ_ЧЕЛ_МН -> people | children | students | teachers | doctors | workers | kings | queens | friends | neighbors | soldiers | drivers | boys | girls | women
+ГЛ_ЧЕЛ_1 -> walk | run | work | talk | sleep | play | read | drive
+ГЛ_ЧЕЛ_3 -> walks | runs | works  | talks | sleeps | plays | reads | drives
+ГЛ_ЧЕЛ_МН -> walk | run | work | talk | sleep | play | read | drive
 
-СОБСТВ_ЧЕЛ_ЕД -> John | Mary | Alice | Robert | Emma | David | Olivia | James | Sophia | Michael
+ГЛ_ЧЕЛ_1_ЕСТЬ -> eat
+ГЛ_ЧЕЛ_МН_ЕСТЬ -> eat
+ГЛ_ЧЕЛ_3_ЕСТЬ -> eats
+ГЛ_ЧЕЛ_1_ПИТЬ -> drink
+ГЛ_ЧЕЛ_МН_ПИТЬ -> drink
+ГЛ_ЧЕЛ_3_ПИТЬ -> drinks
 
-ПРИЛ_ЧЕЛ -> tall | short | young | old | clever | kind | angry | happy | sad | brave | lazy | strong | weak | rich | poor
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД -> runs | sleeps | eats | plays | drinks | hunts | hides | jumps | walks | bites
+ГЛ_ЖИВОТН_НАЗЕМ_МН -> run | sleep | eat | play | drink | hunt | hide | jump | walk | bite
 
-ГЛ_ЧЕЛ_ЕД -> walks | runs | eats | sleeps | talks | reads | writes | works | plays | thinks | drives | helps | calls | looks | smiles
-ГЛ_ЧЕЛ_МН -> walk | run | eat | sleep | talk | read | write | work | play | think | drive | help | call | look | smile
+ГЛ_ЖИВОТН_ПТИЦА_ЕД -> flies | sings | sleeps | eats
+ГЛ_ЖИВОТН_ПТИЦА_МН -> fly | sing | sleep | eat
 
-СУЩ_ЖИВОТН_ЕД -> dog | cat | horse | cow | tiger | lion | bear | wolf | fox | bird | fish | mouse | rabbit | elephant | monkey
-СУЩ_ЖИВОТН_МН -> dogs | cats | horses | cows | tigers | lions | bears | wolves | foxes | birds | fishes | mice | rabbits | elephants | monkeys
 
-ПРИЛ_ЖИВОТН -> wild | domestic | big | small | fast | slow | hungry | angry | kind | noisy | quiet | funny | lazy | brave | smart
+ГЛ_ЖИВОТН_РЫБА_ЕД -> swims | hides | eats | moves | hunts | rests | dives | floats | glides | sleeps | explores
+ГЛ_ЖИВОТН_РЫБА_МН -> swim | hide | eat | move  | hunt | rest | dive | float | glide | sleep | explore
 
-ГЛ_ЖИВОТН_ЕД -> runs | eats | sleeps | jumps | flies | swims | hunts | hides | plays | drinks | bites | climbs | looks | walks | attacks
-ГЛ_ЖИВОТН_МН -> run | eat | sleep | jump | fly | swim | hunt | hide | play | drink | bite | climb | look | walk | attack
 
-СУЩ_ПРЕДМ_ЕД -> table | chair | book | car | house | pen | phone | computer | window | door | bed | bag | lamp | clock | picture
-СУЩ_ПРЕДМ_МН -> tables | chairs | books | cars | houses | pens | phones | computers | windows | doors | beds | bags | lamps | clocks | pictures
+# -- Глаголы предметов
+ГЛ_ПРЕДМ_ЕД -> stands | lies | moves | shines | works | opens | closes | falls
+ГЛ_ПРЕДМ_МН -> stand | lie | move | shine | work | open | close | fall
 
-ПРИЛ_ПРЕДМ -> big | small | heavy | light | new | old | round | square | red | blue | green | yellow | black | white | broken
 
-ГЛ_ПРЕДМ_ЕД -> lies | stands | falls | breaks | shines | moves | hangs | burns | opens | closes | rings | rolls | works | helps | stays
-ГЛ_ПРЕДМ_МН -> lie | stand | fall | break | shine | move | hang | burn | open | close | ring | roll | work | help | stay
+# -- Артикли, местоимения, собственные имена
+АРТ_ЕД_ЛИСТ -> the | a | an | this | that | my | your | his | her | our
+АРТ_МН_ЛИСТ -> the | these | those | my | your | our | their | some | many | few
 
-МЕСТОИМ_ЧЕЛ_ЕД -> I | he | she | it | somebody | someone | anybody | nobody | this one | that one | myself | himself | herself | itself
-МЕСТОИМ_ЧЕЛ_МН -> we | you | they | some | all | both | others | everybody | none | these | those | ourselves | yourselves | themselves | anyone
 
-МЕСТОИМ_ЖИВОТН_ЕД -> it | this | that | one | someone | something | anything | nothing | everything | itself | some animal | this creature | that creature | this one | that one
-МЕСТОИМ_ЖИВОТН_МН -> they | these | those | some | many | few | several | all | others | everything | themselves | some animals | these creatures | those creatures | these ones | those ones
+МЕСТОИМ_ЧЕЛ_1_ЛИСТ -> I
+МЕСТОИМ_ЧЕЛ_3_ЛИСТ -> he | she | it
+МЕСТОИМ_ЧЕЛ_МН_ЛИСТ -> we | you | they
+СОБСТВ_ЧЕЛ_ЛИСТ -> Robert | Alice | Tom | Mary | John | Emma
 
-МЕСТОИМ_ПРЕДМ_ЕД -> it | this | that | one | something | anything | nothing | everything | itself | this thing | that thing | each | either | neither | whichever
-МЕСТОИМ_ПРЕДМ_МН -> they | these | those | some | many | few | several | all | others | everything | themselves | these things | those things | both | many others | all of them
 
-ПРЕДЛОГ -> in | on | at | under | over | by | near | behind | before | after | with | without | about | for | from
+МЕСТОИМ_ПРЕДМ_ЕД_ЛИСТ -> it | this | that
+МЕСТОИМ_ПРЕДМ_МН_ЛИСТ -> they | these | those
+
+
+# -- Существительные — люди
+СУЩ_ЧЕЛ_ЕД -> man | woman | child | student | teacher | friend | doctor | driver | boy | girl
+СУЩ_ЧЕЛ_МН -> men | women | children | students | teachers | friends | doctors | drivers | boys | girls
+ПРИЛ_ЧЕЛ -> kind | lazy | rich | poor | old | young | strong | clever | good | bad
+
+
+# -- Существительные — наземные животные
+СУЩ_ЖИВОТН_НАЗЕМ_ЕД -> dog | cat | horse | cow | tiger | lion | bear | wolf | fox | monkey | elephant
+СУЩ_ЖИВОТН_НАЗЕМ_МН -> dogs | cats | horses | cows | tigers | lions | bears | wolves | foxes | monkeys | elephants
+ПРИЛ_ЖИВОТН -> wild | lazy | fast | big | small | strong | kind | angry | happy | noisy
+
+
+# -- Птицы
+СУЩ_ЖИВОТН_ПТИЦА_ЕД -> bird | eagle | duck  | owl
+СУЩ_ЖИВОТН_ПТИЦА_МН -> birds | eagles | ducks  | owls
+
+
+# -- Рыбы и морские животные (исправлены множественные формы)
+СУЩ_ЖИВОТН_РЫБА_ЕД -> fish | salmon | shark | whale | dolphin | tuna | seal | seahorse | octopus | turtle | lobster | squid | stingray | eel | starfish | shrimp | clam
+СУЩ_ЖИВОТН_РЫБА_МН -> fish | salmon | sharks | whales | dolphins | tuna | seals | seahorses | octopuses | turtles | lobsters | squid | stingrays | eels | starfish | shrimp | clams
+
+
+# -- Предметы
+СУЩ_ПРЕДМ_ЕД -> table | chair | book | car | house | bag | pen | phone | window | door
+СУЩ_ПРЕДМ_МН -> tables | chairs | books | cars | houses | bags | pens | phones | windows | doors
+ПРИЛ_ПРЕДМ -> old | new | big | small | wooden | heavy | light | broken | red | white
+
+
+# -- Еда и напитки
+СУЩ_ЕДА_ЕСТЬ -> apple | bread | carrot | meat | milk | cheese | water | juice | cake | fruit | vegetable
+СУЩ_ЕДА_ПИТЬ -> water | juice | milk | tea
+
+
+# -- Предлоги и среды (разделены по типам использования)
+ПРЕДЛОГ_ЛИСТ -> in | on | under | near | before | after | without | behind | by | from | with | around | about
+ПРЕДЛОГ_МОРЕ_ЛИСТ -> in | near | under | around | below
+ПРЕДЛОГ_ЗЕМЛЯ_ЛИСТ -> on | near | behind | under | beside | from | over | across
+ПРЕДЛОГ_ВОЗДУХ_ЛИСТ -> above | near | around | over | across
+ПРЕДЛОГ_ПРЕДМ_ЛИСТ -> on | in | under | near | behind | beside
+ПРЕДЛОГ_ЕДА_ЕСТЬ_ЛИСТ -> with | from | on
+ПРЕДЛОГ_ЕДА_ПИТЬ_ЛИСТ -> with | from | in
+
+
+# -- Дополнительные среды
+СУЩ_СРЕДА_МОРЕ -> water | coral | sea | reef | rock | sand | ocean
+СУЩ_СРЕДА_ЗЕМЛЯ -> ground | field | house | forest | tree
+СУЩ_СРЕДА_ВОЗДУХ -> sky | cloud | mountain | nest
+
+
+# -- Наречия
+ADVERB_ЛИСТ -> quickly | slowly | loudly | quietly | happily
+ПРЕДЛОГ_ЛЮДИ -> to | with | for | about | near
