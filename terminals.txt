@@ -1,29 +1,50 @@
 # -- Глаголы людей: разделение на типы
 
-ГЛ_ЧЕЛ_1 -> walk | run | work | talk | sleep | play | read | drive
-ГЛ_ЧЕЛ_3 -> walks | runs | works  | talks | sleeps | plays | reads | drives
-ГЛ_ЧЕЛ_МН -> walk | run | work | talk | sleep | play | read | drive
-
+ГЛ_ЧЕЛ_1 -> work | talk | play | read | drive | cook | sing | dance | write | study 
+ГЛ_ЧЕЛ_3 -> works | talks | plays | reads | drives | cooks | sings | dances | writes | studies 
+ГЛ_ЧЕЛ_МН -> work | talk | play | read | drive | cook | sing | dance | write | study 
+ГЛ_ЧЕЛ_1_ДВИЖ ->  walk | run 
+ГЛ_ЧЕЛ_3_ДВИЖ -> walks | runs
+ГЛ_ЧЕЛ_МН_ДВИЖ ->  walk | run
 ГЛ_ЧЕЛ_1_ЕСТЬ -> eat
 ГЛ_ЧЕЛ_МН_ЕСТЬ -> eat
 ГЛ_ЧЕЛ_3_ЕСТЬ -> eats
 ГЛ_ЧЕЛ_1_ПИТЬ -> drink
 ГЛ_ЧЕЛ_МН_ПИТЬ -> drink
 ГЛ_ЧЕЛ_3_ПИТЬ -> drinks
+# -- Глаголы разговора человека
+ГЛ_ЧЕЛ_1_РАЗГ -> talk | speak | chat | whisper | shout | argue | discuss
+ГЛ_ЧЕЛ_3_РАЗГ -> talks | speaks | chats | whispers | shouts | argues | discusses
+ГЛ_ЧЕЛ_МН_РАЗГ -> talk | speak | chat | whisper | shout | argue | discuss
+ГЛ_ЧЕЛ_1_ТЕХН -> turn on | turn off | charge | repair | use | buy
+ГЛ_ЧЕЛ_МН_ТЕХН -> turn on | turn off | charge | repair | use | buy
+ГЛ_ЧЕЛ_3_ТЕХН -> turns on | turns off | charges | repairs | uses | buys
+ГЛ_ЧЕЛ_1_КУХ -> cook | bake 
+ГЛ_ЧЕЛ_3_КУХ -> cooks | bakes 
+ГЛ_ЧЕЛ_МН_КУХ -> cook | bake 
 
-ГЛ_ЖИВОТН_НАЗЕМ_ЕД -> runs | sleeps | eats | plays | drinks | hunts | hides | jumps | walks | bites
-ГЛ_ЖИВОТН_НАЗЕМ_МН -> run | sleep | eat | play | drink | hunt | hide | jump | walk | bite
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД -> runs |  eats | plays | hunts | hides | jumps | walks | bites
+ГЛ_ЖИВОТН_НАЗЕМ_МН -> run |  eat | play | drink | hunt | hide | jump | walk 
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ДВИЖ -> walks | runs | jumps | crawls | climbs | moves | chases | hunts | escapes | follows
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ЕСТЬ -> eats | bites | chews | hunts | licks | feeds | devours | nibbles
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ОТДЫХ -> sleeps | rests | lies | sits | waits | relaxes
 
-ГЛ_ЖИВОТН_ПТИЦА_ЕД -> flies | sings | sleeps | eats
-ГЛ_ЖИВОТН_ПТИЦА_МН -> fly | sing | sleep | eat
+ГЛ_ЖИВОТН_НАЗЕМ_МН_ДВИЖ -> walk | run | jump | crawl | climb | move | chase | hunt | escape | follow
+ГЛ_ЖИВОТН_НАЗЕМ_МН_ЕСТЬ -> eat | bite | chew | hunt | lick | feed | devour | nibble
+ГЛ_ЖИВОТН_НАЗЕМ_МН_ОТДЫХ -> sleep | rest | lie | sit | wait | relax
 
 
-ГЛ_ЖИВОТН_РЫБА_ЕД -> swims | hides | eats | moves | hunts | rests | dives | floats | glides | sleeps | explores
-ГЛ_ЖИВОТН_РЫБА_МН -> swim | hide | eat | move  | hunt | rest | dive | float | glide | sleep | explore
+ГЛ_ЖИВОТН_ПТИЦА_ЕД -> flies | sings | eats
+ГЛ_ЖИВОТН_ПТИЦА_МН -> fly | sing |  eat
+ГЛ_ЖИВОТН_ПТИЦА_ЕД_ЗВУК -> sings | chirps | screeche
+
+
+ГЛ_ЖИВОТН_РЫБА_ЕД -> swims | moves | dives | floats | glides | explores | flees | chases
+ГЛ_ЖИВОТН_РЫБА_МН -> swim | move | dive | float | glide | explore | flee | chase
 
 
 # -- Глаголы предметов
-ГЛ_ПРЕДМ_ЕД -> stands | lies | moves | shines | works | opens | closes | falls
+ГЛ_ПРЕДМ_ЕД -> stands | lies | moves | shines |  opens | closes
 ГЛ_ПРЕДМ_МН -> stand | lie | move | shine | work | open | close | fall
 
 
@@ -31,32 +52,38 @@
 АРТ_ЕД_ЛИСТ -> the | a | an | this | that | my | your | his | her | our
 АРТ_МН_ЛИСТ -> the | these | those | my | your | our | their | some | many | few
 
+АРТ_ЕД_НЕЖИВ -> the | a | an | this | that
+АРТ_МН_НЕЖИВ -> the | these | that
+
 
 МЕСТОИМ_ЧЕЛ_1_ЛИСТ -> I
-МЕСТОИМ_ЧЕЛ_3_ЛИСТ -> he | she | it
+МЕСТОИМ_ЧЕЛ_3_ЛИСТ -> he | she  
 МЕСТОИМ_ЧЕЛ_МН_ЛИСТ -> we | you | they
 СОБСТВ_ЧЕЛ_ЛИСТ -> Robert | Alice | Tom | Mary | John | Emma
 
 
-МЕСТОИМ_ПРЕДМ_ЕД_ЛИСТ -> it | this | that
+МЕСТОИМ_ПРЕДМ_ЕД_ЛИСТ ->  this | that
 МЕСТОИМ_ПРЕДМ_МН_ЛИСТ -> they | these | those
 
 
 # -- Существительные — люди
-СУЩ_ЧЕЛ_ЕД -> man | woman | child | student | teacher | friend | doctor | driver | boy | girl
-СУЩ_ЧЕЛ_МН -> men | women | children | students | teachers | friends | doctors | drivers | boys | girls
-ПРИЛ_ЧЕЛ -> kind | lazy | rich | poor | old | young | strong | clever | good | bad
-
+СУЩ_ЧЕЛ_ЕД -> man | woman | child | student | teacher | friend | boy | girl 
+СУЩ_ЧЕЛ_МН -> men | women | children | students | teachers | friends | boys | girls
+ПРИЛ_ЧЕЛ -> kind | lazy | old | young | strong | good 
+СУЩ_ПРЕДМ_ТЕХ -> laptop | phone | tablet | printer | camera  | keyboard
+СУЩ_ПРЕДМ_КУХ -> oven | microwave | fridge | blender | kettle | toaster | coffee_maker | mixer | dishwasher | stove
 
 # -- Существительные — наземные животные
-СУЩ_ЖИВОТН_НАЗЕМ_ЕД -> dog | cat | horse | cow | tiger | lion | bear | wolf | fox | monkey | elephant
-СУЩ_ЖИВОТН_НАЗЕМ_МН -> dogs | cats | horses | cows | tigers | lions | bears | wolves | foxes | monkeys | elephants
+СУЩ_ЖИВОТН_НАЗЕМ_ЕД ->  wolf | fox | lion | tiger | bear | leopard | cheetah | jaguar 
+СУЩ_ЖИВОТН_НАЗЕМ_МН -> wolves | foxes | lions | tigers | bears | leopards | cheetahs | jaguars 
 ПРИЛ_ЖИВОТН -> wild | lazy | fast | big | small | strong | kind | angry | happy | noisy
 
 
 # -- Птицы
 СУЩ_ЖИВОТН_ПТИЦА_ЕД -> bird | eagle | duck  | owl
 СУЩ_ЖИВОТН_ПТИЦА_МН -> birds | eagles | ducks  | owls
+СУЩ_ПРИБОР -> in the oven | in the microwave | in the blender | on the stove | in the pan
+СУЩ_ЕДА_КУХ -> cake | pie | bread | cookies | pasta | soup | salad | pizza | omelette | pancake | rice | stew | sandwich | pastry | muffin | lasagna | smoothie | sauce | burger | casserole
 
 
 # -- Рыбы и морские животные (исправлены множественные формы)
@@ -71,26 +98,50 @@
 
 
 # -- Еда и напитки
-СУЩ_ЕДА_ЕСТЬ -> apple | bread | carrot | meat | milk | cheese | water | juice | cake | fruit | vegetable
-СУЩ_ЕДА_ПИТЬ -> water | juice | milk | tea
+СУЩ_ЕДА_ЕСТЬ -> apple | bread | carrot | meat | cheese |  cake | fruit | vegetable | egg | fish | chicken | rice | pasta | salad | sandwich | soup | chocolate | yogurt | pear
+СУЩ_ЕДА_ПИТЬ -> water | juice | milk | tea | coffee | soda | lemonade | wine | beer | smoothie | chocolate_milk | herbal_tea
+
+СУЩ_ЗДАНИЕ -> restaurant | cafe | kitchen | dining room | home | bar | school cafeteria | hotel
+СУЩ_ЕДА_ЖИВОТН -> meat | rabbit | chicken | mouse | bird | frog | honey 
 
 
 # -- Предлоги и среды (разделены по типам использования)
 ПРЕДЛОГ_ЛИСТ -> in | on | under | near | before | after | without | behind | by | from | with | around | about
-ПРЕДЛОГ_МОРЕ_ЛИСТ -> in | near | under | around | below
-ПРЕДЛОГ_ЗЕМЛЯ_ЛИСТ -> on | near | behind | under | beside | from | over | across
-ПРЕДЛОГ_ВОЗДУХ_ЛИСТ -> above | near | around | over | across
-ПРЕДЛОГ_ПРЕДМ_ЛИСТ -> on | in | under | near | behind | beside
+ПРЕДЛОГ_МОРЕ_ЛИСТ -> in 
+ПРЕДЛОГ_ЗЕМЛЯ_ЛИСТ -> in | on | around | along | through | across | near | by | over | under | beside
+ПРЕДЛОГ_ПРЕДМ_ЛИСТ -> on | in | under | near | beside | behind
 ПРЕДЛОГ_ЕДА_ЕСТЬ_ЛИСТ -> with | from | on
 ПРЕДЛОГ_ЕДА_ПИТЬ_ЛИСТ -> with | from | in
+ПРЕДЛОГ_ЗДАНИЕ -> in | at | inside
+ПРЕДЛОГ_МЕСТА -> in | around | across | along | near | by
+ПРЕДЛОГ_СОБЕС -> with
 
 
 # -- Дополнительные среды
 СУЩ_СРЕДА_МОРЕ -> water | coral | sea | reef | rock | sand | ocean
-СУЩ_СРЕДА_ЗЕМЛЯ -> ground | field | house | forest | tree
-СУЩ_СРЕДА_ВОЗДУХ -> sky | cloud | mountain | nest
+СУЩ_СРЕДА_ЗЕМЛЯ -> ground | field | forest 
+ДОПОЛН_СРЕДА_ВОЗДУХ -> in the sky | above the clouds | over the mountain | across the valley | near the nest | around the trees | over the forest | above the river | around the village
+
+СУЩ_ВОДА -> river | lake | stream | pond | creek | ocean
+СУЩ_ПАРК -> park | playground | garden | square
+СУЩ_ЗДАНИЕ -> house | school | library
+СУЩ_ЛЕС -> forest | woods | jungle | grove
+СУЩ_ПОЛЕ -> field | meadow | grassland
+
+ГЛ_ЧЕЛ_1_ПРЕДМ -> read | open | close | hold | use | carry
+ГЛ_ЧЕЛ_3_ПРЕДМ -> reads | opens | closes | holds | uses | carries
+ГЛ_ЧЕЛ_МН_ПРЕДМ -> read | open | close | hold | use | carry
 
 
 # -- Наречия
 ADVERB_ЛИСТ -> quickly | slowly | loudly | quietly | happily
 ПРЕДЛОГ_ЛЮДИ -> to | with | for | about | near
+ПРЕДЛОГ_ПРЕДМ -> on | in | under | above | near | with | behind | over
+НАРЕЧИЕ_ДВИЖ -> quickly | slowly | nervously | lazily | quietly | fast | calmly | steadily | lightly | freely
+
+
+ВРЕМЯ -> every day | every morning | every evening | sometimes | often | usually
+
+И -> and
+
+ДОПОЛН_СРЕДА_МОРЕ -> in the water | in the sea | near the coral | above the reef | under the rock | around the sand | near the ocean | along the reef

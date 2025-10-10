@@ -21,4 +21,5 @@ def generate_sentence(grammar: dict, terminals: dict, first_symbol='ПРЕДЛО
 if __name__ == '__main__':
     grammar = parse_file('grammar.txt')
     terminals = parse_file('terminals.txt')
-    print(generate_sentence(grammar, terminals))
+    result = generate_sentence(grammar, terminals)
+    print(result[0].upper() + result[1:] + '.')
