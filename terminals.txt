@@ -19,18 +19,31 @@
 ГЛ_ЧЕЛ_1_ТЕХН -> turn on | turn off | charge | repair | use | buy
 ГЛ_ЧЕЛ_МН_ТЕХН -> turn on | turn off | charge | repair | use | buy
 ГЛ_ЧЕЛ_3_ТЕХН -> turns on | turns off | charges | repairs | uses | buys
-ГЛ_ЧЕЛ_1_КУХ -> cook | bake 
-ГЛ_ЧЕЛ_3_КУХ -> cooks | bakes 
-ГЛ_ЧЕЛ_МН_КУХ -> cook | bake 
+ГЛ_ЧЕЛ_1_ВАРИТЬ -> boil
+ГЛ_ЧЕЛ_1_ЖАРИТЬ -> fry
+ГЛ_ЧЕЛ_1_БЛЕНД -> blend
+ГЛ_ЧЕЛ_1_ВЫПЕКАТЬ -> bake
+
+
+ГЛ_ЧЕЛ_3_ВАРИТЬ -> boils
+ГЛ_ЧЕЛ_3_ЖАРИТЬ -> fries
+ГЛ_ЧЕЛ_3_БЛЕНД -> blends
+ГЛ_ЧЕЛ_3_ВЫПЕКАТЬ -> bakes
+
+
+ГЛ_ЧЕЛ_МН_ВАРИТЬ -> boil
+ГЛ_ЧЕЛ_МН_ЖАРИТЬ -> fry
+ГЛ_ЧЕЛ_МН_БЛЕНД -> blend
+ГЛ_ЧЕЛ_МН_ВЫПЕКАТЬ -> bake
 
 ГЛ_ЖИВОТН_НАЗЕМ_ЕД -> runs |  eats | plays | hunts | hides | jumps | walks | bites
 ГЛ_ЖИВОТН_НАЗЕМ_МН -> run |  eat | play | drink | hunt | hide | jump | walk 
 ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ДВИЖ -> walks | runs | jumps | crawls | climbs | moves | chases | hunts | escapes | follows
-ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ЕСТЬ -> eats | bites | chews | hunts | licks | feeds | devours 
-ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ОТДЫХ -> sleeps | rests | lies | sits | waits | relaxes
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ЕСТЬ -> eats | bites | chews | hunts | devours 
+ГЛ_ЖИВОТН_НАЗЕМ_ЕД_ОТДЫХ -> sleeps | rests | sits | waits | relaxes
 
 ГЛ_ЖИВОТН_НАЗЕМ_МН_ДВИЖ -> walk | run | jump | crawl | climb | move | chase | hunt | escape | follow
-ГЛ_ЖИВОТН_НАЗЕМ_МН_ЕСТЬ -> eat | bite | chew | hunt | lick | feed | devour 
+ГЛ_ЖИВОТН_НАЗЕМ_МН_ЕСТЬ -> eat | bite | chew | hunt | devour 
 ГЛ_ЖИВОТН_НАЗЕМ_МН_ОТДЫХ -> sleep | rest | lie | sit | wait | relax
 
 
@@ -39,8 +52,8 @@
 ГЛ_ЖИВОТН_ПТИЦА_ЕД_ЗВУК -> sings | chirps | screeche
 
 
-ГЛ_ЖИВОТН_РЫБА_ЕД -> swims | moves | dives | floats | glides | explores | flees | chases
-ГЛ_ЖИВОТН_РЫБА_МН -> swim | move | dive | float | glide | explore | flee | chase
+ГЛ_ЖИВОТН_РЫБА_ЕД -> swims | moves | dives | floats | glides | explores | chases
+ГЛ_ЖИВОТН_РЫБА_МН -> swim | move | dive | float | glide | explore | chase
 
 
 # ---- Терминалы: Глаголы (русское -> англ) ----
@@ -54,17 +67,15 @@
 ГЛ_ИЗДАВАТЬ_ЗВУК_МН -> sing
 ГЛ_ОХОТИТЬСЯ_ЕД -> hunts
 ГЛ_ОХОТИТЬСЯ_МН -> hunt
-ГЛ_ПРИВЛЕЧЬ_ВНИМАНИЕ_ЕД -> tries to attract attention
-ГЛ_ЛЕТАТЬ_В_СТАЙКЕ_ЕД -> flies in flock
+ГЛ_ЛЕТАТЬ_В_СТАЙКЕ_ЕД -> flies
 ГЛ_СЛЕТАТЬ_ЕД -> descends to ground
 ГЛ_ПРЫГАТЬ_ЕД -> jumps on branches
-ГЛ_ЧИСТИТЬ_ЕД -> preens
+ГЛ_ЧИСТИТЬ_ЕД -> cleans the feathers
 
-ГЛ_ПРИВЛЕЧЬ_ВНИМАНИЕ_МН -> try to attract attention
-ГЛ_ЛЕТАТЬ_В_СТАЙКЕ_МН -> fly in flock
+ГЛ_ЛЕТАТЬ_В_СТАЙКЕ_МН -> fly
 ГЛ_СЛЕТАТЬ_МН -> descend to ground
 ГЛ_ПРЫГАТЬ_МН -> jump on branches
-ГЛ_ЧИСТИТЬ_МН -> preen
+ГЛ_ЧИСТИТЬ_МН -> clean the feathers
 
 # -- Глаголы предметов
 ГЛ_ПРЕДМ_ЕД -> stands | lies | moves | shines |  opens | closes
@@ -72,7 +83,7 @@
 
 
 # -- Артикли, местоимения, собственные имена
-АРТ_ЕД_ЛИСТ -> the | a | an | this | that | my | your | his | her | our
+АРТ_ЕД_ЛИСТ -> the | a | an | this | that 
 АРТ_МН_ЛИСТ -> the | these | those | my | your | our | their | some | many | few
 
 АРТ_ЕД_НЕЖИВ -> the | a | an | this | that
@@ -94,24 +105,74 @@
 СУЩ_ЧЕЛ_МН -> men | women | children | students | teachers | friends | boys | girls
 ПРИЛ_ЧЕЛ -> kind | lazy | old | young | strong | good 
 СУЩ_ПРЕДМ_ТЕХ -> laptop | phone | tablet | printer | camera  | keyboard
-СУЩ_ПРЕДМ_КУХ -> oven | microwave | fridge | kettle | toaster | coffee_maker | mixer | dishwasher | stove
+СУЩ_ЕДА_ВАР -> borscht | soup | potatoes | pasta | rice | eggs | vegetables
+СУЩ_ЕДА_ЖАРИТЬ -> meat | chicken | fish | potatoes | vegetables | bacon | sausages
+СУЩ_ЕДА_БЛЕНД -> smoothie | shake | puree | milkshake | juice | hummus
+СУЩ_ЕДА_ВЫПЕКАТЬ -> cake | pie | bread | cookies | pizza | pastry
+
+ПРИБОР_ВАРИТЬ -> on the stove
+ПРИБОР_ЖАРИТЬ -> in the frying pan
+ПРИБОР_БЛЕНД -> in the blender
+ПРИБОР_ВЫПЕКАТЬ -> in the oven
+
+
 
 # -- Существительные — наземные животные
 СУЩ_ЖИВОТН_НАЗЕМ_ЕД ->  wolf | fox | lion | tiger | bear | leopard | cheetah | jaguar 
 СУЩ_ЖИВОТН_НАЗЕМ_МН -> wolves | foxes | lions | tigers | bears | leopards | cheetahs | jaguars 
-ПРИЛ_ЖИВОТН -> wild | lazy | fast | big | small | strong | kind | angry | happy | noisy
+ПРИЛ_ЖИВОТН -> wild | lazy | fast | big | small | strong | angry | happy | noisy
 
 
 # -- Птицы
-СУЩ_ЖИВОТН_ПТИЦА_ЕД -> bird | eagle | duck  | owl
-СУЩ_ЖИВОТН_ПТИЦА_МН -> birds | eagles | ducks  | owls
+СУЩ_ЖИВОТН_ПТИЦА_ЕД -> bird | eagle | hawk | falcon  | osprey | vulture | condor
+СУЩ_ЖИВОТН_ПТИЦА_МН -> birds | eagles | hawks | falcons | ospreys | vultures | condors
 СУЩ_ПРИБОР -> in the oven | in the microwave | on the stove | in the pan
 СУЩ_ЕДА_КУХ -> cake | pie | bread | cookies | pasta | soup | salad | pizza | omelette | pancake | rice | stew | sandwich | pastry | muffin | lasagna | sauce | burger | casserole
 
 
 # -- Рыбы и морские животные (исправлены множественные формы)
-СУЩ_ЖИВОТН_РЫБА_ЕД -> fish | salmon | shark | whale | dolphin | tuna | seal | seahorse | octopus | turtle | lobster | squid | stingray | eel | starfish | shrimp | clam
-СУЩ_ЖИВОТН_РЫБА_МН -> fish | salmon | sharks | whales | dolphins | tuna | seals | seahorses | octopuses | turtles | lobsters | squid | stingrays | eels | starfish | shrimp | clams
+СУЩ_РЫБА_ЕД -> fish | shark | tuna | salmon | clownfish | pike
+СУЩ_РЫБА_МН -> fish | sharks | tuna | salmon | clownfish | pikes
+
+СУЩ_МОРСКИЕ_ЕД -> dolphin | whale | seal | walrus
+СУЩ_МОРСКИЕ_МН -> dolphins | whales | seals | walruses
+
+СУЩ_МОРСКИЕ_БЕСПОЗВ_ЕД -> octopus | jellyfish | crab | shrimp | squid | starfish
+СУЩ_МОРСКИЕ_БЕСПОЗВ_МН -> octopuses | jellyfish | crabs | shrimps | squids | starfishes
+
+
+
+# --- Рыбы ---
+ГЛ_РЫБА_ЕД_ДВИЖ -> swims | moves | dives | hides | floats | turns
+ГЛ_РЫБА_МН_ДВИЖ -> swim | move | dive | hide | float | turn
+
+ГЛ_РЫБА_ЕД_ЕСТЬ -> eats | hunts | bites
+ГЛ_РЫБА_МН_ЕСТЬ -> eat  | hunt | bite
+
+ДОПОЛН_СРЕДА_МОРЕ -> in the sea | near the reef | between corals | in deep water | near the surface | by the rocks
+
+ДОПОЛН_ПИЩА_РЫБА ->  small fish |  shrimp | worms
+ДОПОЛН_ПИЩА_МОРСКИЕ -> fish | squid | small animals
+ДОПОЛН_ПИЩА_БЕСПОЗВ -> algae | detritus | small fish 
+
+НАРЕЧИЕ_ДВИЖ -> gracefully | slowly | quickly | smoothly | silently
+НАРЕЧИЕ_ЕСТЬ -> hungrily | calmly | carefully | greedily | lazily
+
+# --- Морские млекопитающие ---
+ГЛ_МОРСКИЕ_ЕД_ДВИЖ -> swims |dives | surfaces | plays
+ГЛ_МОРСКИЕ_МН_ДВИЖ -> swim | dive | surface | play
+
+ГЛ_МОРСКИЕ_ЕД_ЕСТЬ -> eats | hunts | catches | chews
+ГЛ_МОРСКИЕ_МН_ЕСТЬ -> eat | hunt | catch | chew
+
+
+
+# --- Морские беспозвоночные ---
+ГЛ_БЕСПОЗВ_ЕД_ДВИЖ -> crawls | moves | drifts | slides
+ГЛ_БЕСПОЗВ_МН_ДВИЖ -> crawl | move | drift | slide
+
+ГЛ_БЕСПОЗВ_ЕД_ЕСТЬ -> eats | absorbs
+ГЛ_БЕСПОЗВ_МН_ЕСТЬ -> eat |  absorb
 
 
 # -- Предметы
@@ -122,10 +183,10 @@
 
 # -- Еда и напитки
 СУЩ_ЕДА_ЕСТЬ -> apple | bread | carrot | meat | cheese |  cake | fruit | vegetable | egg | fish | chicken | rice | pasta | salad | sandwich | soup | chocolate | yogurt | pear
-СУЩ_ЕДА_ПИТЬ -> water | juice | milk | tea | coffee | soda | lemonade | wine | beer | smoothie | chocolate_milk | herbal_tea
+СУЩ_ЕДА_ПИТЬ -> water | juice | milk | tea | coffee | soda | lemonade | smoothie | chocolate milk | herbal tea
 
 СУЩ_ЗДАНИЕ -> restaurant | cafe | kitchen | dining room | home | bar | school cafeteria | hotel
-СУЩ_ЕДА_ЖИВОТН -> meat | rabbit | chicken | mouse | bird | frog 
+СУЩ_ЕДА_ЖИВОТН -> meat | rabbit | chicken | mouse | bird 
 
 
 # -- Предлоги и среды (разделены по типам использования)
@@ -145,11 +206,9 @@
 СУЩ_СРЕДА_ЗЕМЛЯ -> ground | field | forest 
 ДОПОЛН_СРЕДА_ВОЗДУХ -> in the sky | above the clouds | over the mountain | across the valley | near the nest | around the trees | over the forest | above the river 
 
-СУЩ_ВОДА -> river | lake | stream | pond | creek | ocean
-СУЩ_ПАРК -> park | playground | garden | square
-СУЩ_ЗДАНИЕ -> house | school | library
-СУЩ_ЛЕС -> forest | woods | jungle | grove
-СУЩ_ПОЛЕ -> field | meadow | grassland
+
+МЕСТО_ДВИЖ_ЧЕЛ -> along the street | through the park | across the bridge | near the river | by the lake | around the city | into the forest | up the hill | down the road | along the beach | past the shop | across the square | between the houses | through the crowd | along the path
+
 
 ГЛ_ЧЕЛ_1_ПРЕДМ -> read | open | close | hold | use | carry
 ГЛ_ЧЕЛ_3_ПРЕДМ -> reads | opens | closes | holds | uses | carries
@@ -160,14 +219,16 @@
 ADVERB_ЛИСТ -> quickly | slowly | loudly | quietly | happily
 ПРЕДЛОГ_ЛЮДИ -> to | with | for | about | near
 ПРЕДЛОГ_ПРЕДМ -> on | in | under | above | near | with | behind | over
-НАРЕЧИЕ_ДВИЖ -> quickly | slowly | nervously | lazily | quietly | fast | calmly | steadily | lightly | freely
 
+НАРЕЧИЕ_ДВИЖ ->  quickly | slowly |  carefully | deftly  
+
+НАРЕЧИЕ_ЕСТЬ -> greedily | calmly | unhurriedly | neatly |  with pleasure
 
 ВРЕМЯ -> every day | every morning | every evening | sometimes | often | usually
 
 И -> and
 
-ДОПОЛН_СРЕДА_МОРЕ -> in the water | in the sea | near the coral | above the reef | under the rock | around the sand | near the ocean | along the reef
+ДОПОЛН_СРЕДА_МОРЕ -> in the water | in the sea | near the coral | on the reef | in the ocean | along the reef
 
 # ---- Среда ----
 ДОПОЛН_СРЕДА_ЛЕТАТЬ -> above the forest | above the river | above the lake | above the city | in the clouds
@@ -177,8 +238,8 @@ ADVERB_ЛИСТ -> quickly | slowly | loudly | quietly | happily
 ДОПОЛН_СТАЙКА -> in a flock 
 
 # ---- Пища ----
-ДОПОЛН_ПИЩА_ПТИЦА ->  seeds | berries | fruits | insects | worms | fish | small rodents
-ДОПОЛН_ПИЩА_ОХОТА -> insects | fish | small rodents | eggs of other birds
+ДОПОЛН_ПИЩА_ПТИЦА ->  small_mammals | birds | fish | insects | reptiles | eggs | carrion | eggs of other birds
+ДОПОЛН_ПИЩА_ОХОТА -> fish | small rodents | eggs of other birds
 
 # ---- Звуки ----
 ЗВУК -> sings | screeches | chirps | whistles | coos
@@ -188,3 +249,8 @@ ADVERB_ЛИСТ -> quickly | slowly | loudly | quietly | happily
 ГЛ_ЧЕЛ_1_ЭМОЦИЯ -> feel | seem | look | appear | become
 
 ПРИЛ_ЭМОЦИЯ -> happy | sad | angry | tired | excited | worried | calm | surprised | scared | relaxed
+
+
+ДОПОЛН_СРЕДА_ДВИЖ -> through the forest | along the road | through the grass | across the field | along the river 
+
+ДОПОЛН_СРЕДА_ОТДЫХ -> in the shade | by the water | under the tree | in the grass |
