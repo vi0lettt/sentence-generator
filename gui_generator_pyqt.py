@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import (
     QPushButton, QTextEdit, QLabel, QFileDialog, QMessageBox, QDialog, QDockWidget
 )
 from PyQt6.QtCore import Qt
-from PyQt6.QtGui import QFont
+from PyQt6.QtGui import QFont, QIcon
 
 from file_parser import parse_file
 from sentence_generator import generate_sentence
@@ -214,7 +214,7 @@ class SentenceGeneratorApp(QMainWindow):
             border-radius: 8px;
             padding: 10px;
         """)
-        container_widget.setFixedHeight(300)
+        container_widget.setFixedHeight(250)
         container_layout = QVBoxLayout(container_widget)
         container_layout.setSpacing(10)
 
@@ -242,21 +242,22 @@ class SentenceGeneratorApp(QMainWindow):
         clear_button.setStyleSheet("color: white; background-color: #2c3e50;")
         clear_button.clicked.connect(self.clear_output)
 
-        view_grammar_button = QPushButton("Посмотреть грамматику")
-        view_grammar_button.setStyleSheet("color: white; background-color: #2c3e50;")
-        view_grammar_button.clicked.connect(self.show_grammar)
+        # view_grammar_button = QPushButton("Посмотреть грамматику")
+        # view_grammar_button.setStyleSheet("color: white; background-color: #2c3e50;")
+        # view_grammar_button.clicked.connect(self.show_grammar)
 
         container_layout.addWidget(copy_button)
         container_layout.addWidget(copy_translation_button)
         container_layout.addWidget(clear_button)
-        container_layout.addWidget(view_grammar_button)
+        # container_layout.addWidget(view_grammar_button)
         container_layout.addStretch()
 
         dock.setWidget(container_widget)
         self.addDockWidget(Qt.DockWidgetArea.RightDockWidgetArea, dock)
 
         menu_bar = self.menuBar()
-        file_menu = menu_bar.addMenu("Файл")
+        # file_menu = menu_bar.addMenu("≡")
+        file_menu = menu_bar.addMenu(QIcon("menu.png"), "")
 
         load_grammar_action = file_menu.addAction("Загрузить грамматику")
         load_grammar_action.triggered.connect(self.load_grammar_file)
@@ -317,7 +318,26 @@ class SentenceGeneratorApp(QMainWindow):
             QMessageBox.warning(self, "Нет текста", "Сначала сгенерируйте предложение и дождитесь перевода")
 
     def clear_output(self):
-        self.output_text.clear()
+        msg_box = QMessageBox(self)
+        msg_box.setWindowTitle("Очистка")
+        msg_box.setText("Вы уверены, что хотите очистить?")
+        msg_box.setIcon(QMessageBox.Icon.Question)
+
+        btn_all = msg_box.addButton("Да, очистить оба поля", QMessageBox.ButtonRole.YesRole)
+        btn_sentence = msg_box.addButton("Очистить только предложение", QMessageBox.ButtonRole.NoRole)
+        btn_cancel = msg_box.addButton("Нет, отменить", QMessageBox.ButtonRole.RejectRole)
+
+        msg_box.exec()
+
+        if msg_box.clickedButton() == btn_all:
+            self.output_text.clear()
+            self.translation_text.clear()
+            QMessageBox.information(self, "Очистка", "Оба поля очищены")
+        elif msg_box.clickedButton() == btn_sentence:
+            self.output_text.clear()
+            QMessageBox.information(self, "Очистка", "Предложение очищено")
+        elif msg_box.clickedButton() == btn_cancel:
+            pass
 
     def show_grammar(self):
         viewer = GrammarViewer(self.grammar_content, self)
