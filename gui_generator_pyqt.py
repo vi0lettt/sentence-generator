@@ -256,8 +256,8 @@ class SentenceGeneratorApp(QMainWindow):
         self.addDockWidget(Qt.DockWidgetArea.RightDockWidgetArea, dock)
 
         menu_bar = self.menuBar()
-        # file_menu = menu_bar.addMenu("≡")
-        file_menu = menu_bar.addMenu(QIcon("menu.png"), "")
+        file_menu = menu_bar.addMenu("≡")
+        # file_menu = menu_bar.addMenu(QIcon("menu.png"), "")
 
         load_grammar_action = file_menu.addAction("Загрузить грамматику")
         load_grammar_action.triggered.connect(self.load_grammar_file)
