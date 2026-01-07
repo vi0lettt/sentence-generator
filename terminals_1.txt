@@ -1,0 +1,27 @@
+# --- Имена людей ---
+NAME -> Dan | Sam | Tom | Ann | Ben
+
+# --- Местоимения ---
+PRON -> he | she | I | we
+
+# --- Глаголы (база для рифм) ---
+VERB_PLAY -> play | stay
+VERB_MOVE -> run | plan
+VERB_SEE -> see | be
+VERB_FEEL -> feel | dream
+
+# --- Наречия ---
+ADV_DAY -> today | someday
+ADV_WAY -> away | okay
+
+# --- Существительные (рифмуемые) ---
+NOUN_DAY -> day | way | play | stay
+NOUN_MAN -> man | plan | can
+NOUN_TOWN -> town | down | clown
+NOUN_NIGHT -> night | light
+
+# --- Прилагательные ---
+ADJ_GOOD -> good | bright
+
+# --- Артикли ---
+ART -> a | the
