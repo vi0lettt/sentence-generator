@@ -11,7 +11,12 @@ from PyQt6.QtGui import QFont
 from file_parser import parse_file
 from sentence_generator import generate_sentence
 from poem_generator import generate_limerick
+<<<<<<< HEAD
 from syntax_analyzer import SyntaxAnalyzer
+=======
+
+
+>>>>>>> 87d1ca11544f29698bb83fc50e9a83b8eef9eaa8
 from deep_translator import GoogleTranslator
 
 
@@ -137,25 +142,51 @@ class SentenceGeneratorApp(QMainWindow):
         output_layout = QVBoxLayout(output_container)
         output_layout.setSpacing(5)
 
+<<<<<<< HEAD
         self.generation_mode = "classic"
 
         classic_btn = QPushButton("Классическая КС-грамматика")
         classic_btn.setStyleSheet("background-color: #ecf0f1; color: #2c3e50;")
+=======
+
+        # ------------------ НОВЫЙ БЛОК: КНОПКИ ВЫБОРА РЕЖИМА ------------------
+        self.generation_mode = "classic"  # по умолчанию
+
+        classic_btn = QPushButton("Классическая КС-грамматика")
+>>>>>>> 87d1ca11544f29698bb83fc50e9a83b8eef9eaa8
         classic_btn.clicked.connect(lambda: self.set_mode("classic"))
         left_layout.addWidget(classic_btn)
 
         stochastic_btn = QPushButton("Вероятностная генерация")
+<<<<<<< HEAD
         stochastic_btn.setStyleSheet(
             "background-color: #ecf0f1; color: #2c3e50;")
+=======
+>>>>>>> 87d1ca11544f29698bb83fc50e9a83b8eef9eaa8
         stochastic_btn.clicked.connect(lambda: self.set_mode("stochastic"))
         left_layout.addWidget(stochastic_btn)
 
         rhymed_btn = QPushButton("С рифмой")
+<<<<<<< HEAD
         rhymed_btn.setStyleSheet("background-color: #ecf0f1; color: #2c3e50;")
         rhymed_btn.clicked.connect(lambda: self.set_mode("rhymed"))
         left_layout.addWidget(rhymed_btn)
 
         eng_label = QLabel("Предложение (можно редактировать):")
+=======
+        rhymed_btn.clicked.connect(lambda: self.set_mode("rhymed"))
+        left_layout.addWidget(rhymed_btn)
+        # ----------------------------------------------------------------------
+
+        eng_label = QLabel("Сгенерированное предложение:")
+        eng_label.setAlignment(Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
+        eng_label.setStyleSheet("""
+            font-size: 17px;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 5px 0;
+        """)
+>>>>>>> 87d1ca11544f29698bb83fc50e9a83b8eef9eaa8
         output_layout.addWidget(eng_label)
 
         self.output_text = QTextEdit()
@@ -358,7 +389,45 @@ class SentenceGeneratorApp(QMainWindow):
                 QMessageBox.information(
                     self, "Успешно", "Терминалы загружены и анализатор обновлен.")
             except Exception as e:
+<<<<<<< HEAD
                 QMessageBox.critical(self, "Ошибка", f"Сбой загрузки: {e}")
+=======
+                QMessageBox.critical(self, "Ошибка", f"Не удалось загрузить терминалы:\n{e}")
+
+        
+    # ------------------ НОВАЯ ФУНКЦИЯ ------------------
+    def set_mode(self, mode):
+        self.generation_mode = mode
+        QMessageBox.information(self, "Режим генерации", f"Выбран режим: {mode}")
+
+    # ------------------ ИЗМЕНЕНИЕ generate_and_display ------------------
+    def generate_and_display(self):
+        if not self.grammar or not self.terminals:
+            QMessageBox.warning(self, "Ошибка", "Грамматика или терминалы не загружены")
+            return
+
+        try:
+            # ------------------ ВЫБОР ФУНКЦИИ ПО РЕЖИМУ ------------------
+            if self.generation_mode == "classic":
+                sentence = generate_sentence(self.grammar, self.terminals)  # обычная
+            elif self.generation_mode == "stochastic":
+                sentence = generate_sentence(self.grammar, self.terminals, probabilistic = True)  # вероятностная
+            elif self.generation_mode == "rhymed":
+                sentence = generate_limerick(self.grammar, self.terminals)  # рифмованная
+            else:
+                sentence = generate_sentence(self.grammar, self.terminals)
+            # --------------------------------------------------------------
+
+            sentence = sentence[0].upper() + sentence[1:] + "."
+            self.output_text.setPlainText(sentence)
+
+            translated = self.translator.translate(sentence)
+            self.translation_text.setPlainText(translated)
+
+        except Exception as e:
+            QMessageBox.critical(self, "Ошибка", f"Не удалось сгенерировать предложение:\n{e}")
+
+>>>>>>> 87d1ca11544f29698bb83fc50e9a83b8eef9eaa8
 
 
 if __name__ == "__main__":

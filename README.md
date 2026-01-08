@@ -3,7 +3,7 @@
 > Можно генерировать предложения по заданной грамматике на английском языке, а также получать их перевод на русский
 
 
-## Как собрать `.exe` (на Windows)
+## Как собрать `.exe` 
 
 Чтобы получить готовое исполняемое приложение (`gui_generator_pyqt.exe`), выполните следующие шаги:
 ### 1. Установите PyInstaller
@@ -14,7 +14,7 @@ pip install pyinstaller
 ### 2. Соберите приложение
 
 ```bash
-pyinstaller --onefile --windowed gui_generator_pyqt.py
+pyinstaller gui_generator_pyqt.py --onefile --windowed --collect-all pronouncing --collect-all cmudict --copy-metadata cmudict
 ```
 
 
